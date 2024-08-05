@@ -17,7 +17,13 @@ document.getElementById('quiz-form').addEventListener('submit', function(event) 
     const formData = new FormData(event.target);
 
     for (let [question, correctAnswer] of Object.entries(answers)) {
-        const userAnswer = formData.get(question).trim();
+        let userAnswer = formData.get(question);
+        
+        if (question === "question4" || question === "question6") {
+            userAnswer = userAnswer ? userAnswer : "";
+        } else {
+            userAnswer = userAnswer ? userAnswer.trim() : "";
+        }
 
         if (userAnswer.toUpperCase() === correctAnswer) {
             correctAnswers++;
