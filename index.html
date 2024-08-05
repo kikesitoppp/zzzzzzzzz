@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario para saber cuánto me quieres</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Cuestionario para saber cuánto me quieres</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <label>¿Cuál es mi nombre completo?</label>
+                <input type="text" name="question1" required>
+            </div>
+            <div class="question">
+                <label>¿Cuál es la fecha de mi nacimiento en formato DD/MM/AAAA?</label>
+                <input type="text" name="question2" required>
+            </div>
+            <div class="question">
+                <label>¿Cuál es la fecha de nuestro cumple meses o aniversario (número)?</label>
+                <input type="text" name="question3" required>
+            </div>
+            <div class="question">
+                <label>¿Cuál es mi equipo favorito?</label>
+                <div>
+                    <input type="radio" name="question4" value="Bayer Munich" required>Bayer Munich<br>
+                    <input type="radio" name="question4" value="Bayern Munchen">Bayern Munchen<br>
+                    <input type="radio" name="question4" value="Bayern Munich">Bayern Munich<br>
+                    <input type="radio" name="question4" value="Bayern de Múnich">Bayern de Múnich
+                </div>
+            </div>
+            <div class="question">
+                <label>¿Cuál es mi jugador favorito?</label>
+                <input type="text" name="question5" required>
+            </div>
+            <div class="question">
+                <label>¿Dónde fue nuestro primer beso?</label>
+                <div>
+                    <input type="radio" name="question6" value="Universidad" required>Universidad<br>
+                    <input type="radio" name="question6" value="Boulevard">Boulevard<br>
+                    <input type="radio" name="question6" value="Coctiki">Coctiki<br>
+                    <input type="radio" name="question6" value="Parque">Parque
+                </div>
+            </div>
+            <div class="question">
+                <label>Si respondes esta pregunta te mereces unos ricos besos, ¿cuáles son las dos palabras que más nos hemos dicho en nuestros chats? (en mayúsculas)</label>
+                <input type="text" name="question7" required>
+            </div>
+            <button type="submit">Finalizar</button>
+        </form>
+        <div id="results" style="display: none;">
+            <h2>Resultados</h2>
+            <p id="correct-count"></p>
+            <p id="incorrect-count"></p>
+            <p id="final-message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
