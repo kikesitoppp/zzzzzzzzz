@@ -41,7 +41,7 @@ document.getElementById('quiz-form').addEventListener('submit', function(event) 
     let finalMessage = '';
 
     if (correctAnswers === Object.keys(answers).length) {
-        finalMessage = 'Me quiero mucho, pero yo te quiero más :)';
+        finalMessage = 'Me quiere mucho, pero yo te quiero más :)';
     } else if (correctAnswers > incorrectAnswers) {
         finalMessage = 'Me quieres pero quiéreme más :)';
         setTimeout(() => {
