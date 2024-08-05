@@ -48,7 +48,7 @@ document.getElementById('quiz-form').addEventListener('submit', function(event) 
             results.innerHTML += '<p>¡EXCELENTE MI AMOR SIGUE ASÍ! ❤️❤️❤️</p>';
         }, 1000);
     } else {
-        finalMessage = 'No me quieres :(';
+        finalMessage = 'HOY TE PEGO :)';
     }
 
     document.getElementById('final-message').innerText = finalMessage;
