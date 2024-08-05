@@ -5,9 +5,9 @@ document.getElementById('quiz-form').addEventListener('submit', function(event) 
         question1: "DENIS ENRIQUE BENAVIDES CAIPE",
         question2: "13/04/2004",
         question3: "24",
-        question4: "Bayern de Múnich",
+        question4: "4", // Índice de la opción correcta
         question5: "NEYMAR",
-        question6: "Coctiki",
+        question6: "3", // Índice de la opción correcta
         question7: "TE QUIERO"
     };
 
@@ -20,6 +20,7 @@ document.getElementById('quiz-form').addEventListener('submit', function(event) 
         let userAnswer = formData.get(question);
         
         if (question === "question4" || question === "question6") {
+            // Para las preguntas 4 y 6, comparamos los índices
             userAnswer = userAnswer ? userAnswer : "";
         } else {
             userAnswer = userAnswer ? userAnswer.trim() : "";
