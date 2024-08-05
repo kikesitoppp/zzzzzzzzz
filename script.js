@@ -44,13 +44,12 @@ document.getElementById('quiz-form').addEventListener('submit', function(event) 
         finalMessage = 'Me quiero mucho, pero yo te quiero más :)';
     } else if (correctAnswers > incorrectAnswers) {
         finalMessage = 'Me quieres pero quiéreme más :)';
+        setTimeout(() => {
+            results.innerHTML += '<p>¡EXCELENTE MI AMOR SIGUE ASÍ! ❤️❤️❤️</p>';
+        }, 1000);
     } else {
         finalMessage = 'No me quieres :(';
     }
 
     document.getElementById('final-message').innerText = finalMessage;
-
-    setTimeout(() => {
-        results.innerHTML += '<p>¡EXCELENTE MI AMOR SIGUE ASÍ! ❤️❤️❤️</p>';
-    }, 1000);
 });
